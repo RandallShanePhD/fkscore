@@ -1,3 +1,4 @@
-name = "fkscore"
+# name = "fkscore"
 
-from fkscore import *
+# __all__ = ['fkscore']
+# import fkscore
