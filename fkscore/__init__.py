@@ -2,4 +2,4 @@
 
 # __all__ = ['fkscore']
 
-import stats.py
+from stats import stats
