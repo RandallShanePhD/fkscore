@@ -1,4 +1,5 @@
 # name = "fkscore"
 
 # __all__ = ['fkscore']
-# import fkscore
+
+import stats.py
