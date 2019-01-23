@@ -1,7 +1,7 @@
 # Flesch-Kinkaid Readability Scoring
 
 import pyphen
-from textblob import TextBlob
+import re
 
 
 class fkscore():
@@ -18,18 +18,19 @@ class fkscore():
             score['readability']  # Calculated F-K Readability Score
             score['grade']        # Permuted F-K Grade Reading Level
         '''
-        self.text = TextBlob(text.lower())
         self.stats = {}
-        self.basic_stats(self.text)
+        self.basic_stats(text)
         self.score = {}
         self.fk_score()
 
-    def basic_stats(self, tb):
-        self.stats['num_words'] = len(tb.words)
-        self.stats['num_sentences'] = len(tb.sentences)
+    def basic_stats(self, text):
+        words = [x for x in text.replace('-', ' ').split(' ') if x != '']
+        self.stats['num_words'] = len(words)
+
+        self.stats['num_sentences'] = len([x for x in re.split("(\. +|\? +|\! +)", text) if len(x) > 3])
 
         dic = pyphen.Pyphen(lang='en')
-        self.stats['num_syllables'] = sum([len(dic.inserted(x).split('-')) for x in tb.words])
+        self.stats['num_syllables'] = sum([len(dic.inserted(x).split('-')) for x in words])
 
     def fk_score(self):
         # Flesch-Kincaid readability score

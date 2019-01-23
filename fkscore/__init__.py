@@ -1,5 +1,2 @@
-# name = "fkscore"
-
-# __all__ = ['fkscore']
-
-from stats import stats
+from .fkscore import fkscore
+# from .fkscore import stats

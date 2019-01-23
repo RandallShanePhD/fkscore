@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="fkscore",
-    version="1.1.0",
+    version="1.1.1",
 
     description="Flesch Kincaid readability scoring algorithm",
     long_description=long_description,
@@ -30,7 +30,6 @@ setuptools.setup(
         # Indicate who your project is intended for
         'Intended Audience :: Developers',
         'Topic :: Text Processing :: Linguistic',
-        'Topic :: Scientific/Engineering :: Artificial Intelligence',
         'Topic :: Scientific/Engineering :: Information Analysis',
         'Topic :: Text Processing :: Indexing',
 
@@ -39,7 +38,6 @@ setuptools.setup(
 
         # Specify the Python versions you support here. In particular, ensure
         # that you indicate whether you support Python 2, Python 3 or both.
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
@@ -51,5 +49,5 @@ setuptools.setup(
     keywords=["nlp", 'linguistics', 'nltk', 'text processing'],
     packages=setuptools.find_packages(),
     install_requires=['pyphen'],
-    python_requires='>=2.7, !=3.5.*',
+    python_requires='>=3.5',
 )

@@ -10,6 +10,7 @@ The source code is released under the MIT License.
 ### Installation ###
     pip install fkscore #or pip3
     requires pyphen 0.9.5+
+    requires re
 
 ### Usage ###
 For text in python represented as a string.
@@ -36,7 +37,7 @@ Output includes 2 dictionaries of information as follows:
 Releases and additions will push to PyPi periodically, but if there is a feature in master not built/pushed and you want it to be, just ping me.
 
 ### Credit ###
-This is a maintained as an original implementation of the Flesch-Kincaid readability score algorithm which has been around since 18...(something).  The module is pure python and works with 2.7 although built in 3.5+.  Support for 2.7 branches will not be developed further.
+This is a maintained as an original implementation of the Flesch-Kincaid readability score algorithm which has been around since 18...(something).  The module is pure python and works with 3.5+.
 
 ### Questions ###
 feel free to ping for questions, comments, concerns or hit the repository.
