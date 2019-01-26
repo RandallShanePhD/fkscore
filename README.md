@@ -8,7 +8,7 @@ A Python module implementation of the Flesch Kincaid readability score algorithm
 The source code is released under the MIT License.
 
 ### Installation ###
-    pip install fkscore #or pip3
+    pip3 install fkscore
 
 ### Usage ###
 For text in python represented as a string.
