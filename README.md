@@ -9,7 +9,7 @@ The source code is released under the MIT License.
 
 ### Installation ###
     pip install fkscore #or pip3
-    
+
 ### Usage ###
 For text in python represented as a string.
 
@@ -17,7 +17,7 @@ Takes text as string datatype.  Words can be on same or different lines.  Curren
 
     import fkscore
     text = '...blah blah blah...'
-    f = fkscore(text)
+    f = fkscore.fkscore(text)
     print(f.stats)
     print(f.score)
 
