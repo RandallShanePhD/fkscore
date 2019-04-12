@@ -21,6 +21,14 @@ Takes text as string datatype.  Words can be on same or different lines.  Curren
     print(f.stats)
     print(f.score)
 
+    OR
+
+    from fkscore import fkscore
+    text = '...blah blah blah...'
+    f = fkscore(text)
+    print(f.stats)
+    print(f.score)
+
 ### Output ###
 Output includes 2 dictionaries of information as follows:
 * stats:

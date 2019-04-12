@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="fkscore",
-    version="1.1.2",
+    version="1.1.4",
 
     description="Flesch Kincaid readability scoring algorithm",
     long_description=long_description,
