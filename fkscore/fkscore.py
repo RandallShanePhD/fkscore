@@ -1,12 +1,17 @@
 # Flesch-Kinkaid Readability Scoring
 
-import pyphen
 import re
 import string
-import sys
 
 
 class fkscore():
+    ''' Flesch Kincaid Readability Score
+    test = "The quick red fox jumped over the lazy brown dog."
+    sentences = 1
+    words = 10
+    syllables = 12
+    score =
+    '''
 
     def __init__(self, text):
         '''
@@ -20,7 +25,6 @@ class fkscore():
             score['readability']  # Calculated F-K Readability Score
             score['grade']        # Permuted F-K Grade Reading Level
         '''
-        self.splits = self.text_split(text)
         self.stats = {}
         self.basic_stats(text)
         self.score = {}
@@ -61,9 +65,23 @@ class fkscore():
         self.stats['num_sentences'] = output['sentences']
         self.stats['num_words'] = output['words']
 
-        # Syllables with pyphen
-        dic = pyphen.Pyphen(lang='en')
-        self.stats['num_syllables'] = sum([len(dic.inserted(x)) for x in wordblock])
+        # Syllable computation
+        def num_syllables(word):
+            word = word.lower()
+            count = 0
+            vowels = "aeiouy"
+            if word[0] in vowels:
+                count += 1
+            for index in range(1, len(word)):
+                if word[index] in vowels and word[index - 1] not in vowels:
+                    count += 1
+            if word.endswith("e"):
+                count -= 1
+            if count == 0:
+                count += 1
+            return count
+
+        self.stats['num_syllables'] = sum([num_syllables(x) for x in output['wordblock']])
 
     def fk_score(self):
         # Flesch-Kincaid readability score

@@ -13,7 +13,7 @@ The source code is released under the MIT License.
 ### Usage ###
 For text in python represented as a string.
 
-Takes text as string datatype.  Words can be on same or different lines.  Current version is English language only. Requires pyphen 0.9.5+.  Email for support.
+Takes text as string datatype.  Words can be on same or different lines.  Current version is English language only.  Email for support.
 
     import fkscore
     text = '...blah blah blah...'
@@ -43,11 +43,12 @@ Output includes 2 dictionaries of information as follows:
 Releases and additions will push to PyPi periodically, but if there is a feature in master not built/pushed and you want it to be, just ping me.
 
 ### History ###
-This is a maintained as an original implementation of the Flesch-Kincaid readability score algorithm which has been around since 1975.  The module is pure python and works with 3.5+.
+This is a maintained as an implementation of the Flesch-Kincaid readability algorithm which was initially developed in 1948 by Rudolph Flesch and later revised by the U.S. Navy in 1975.  This module is pure python and works with 3.5+.
 
 ### Questions ###
-Feel free to ping for questions, comments, concerns or hit the repository. <br />
-Randall Shane, PhD <br />
-Randall.Shane@CodeIntelligence.IO <br />
-https://github.com/RandallShanePhD/fkscore <br />
+Feel free to ping for questions, comments, concerns or interact directly via the GitHub repository.
+
+Randall Shane, PhD
+Randall.Shane@CodeIntelligence.IO
+https://github.com/RandallShanePhD/fkscore
 Thank you!

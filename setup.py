@@ -48,6 +48,5 @@ setuptools.setup(
 
     keywords=["nlp", 'linguistics', 'nltk', 'text processing'],
     packages=setuptools.find_packages(),
-    install_requires=['pyphen'],
     python_requires='>=3.5',
 )
