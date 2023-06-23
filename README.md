@@ -48,7 +48,7 @@ This is a maintained as an implementation of the Flesch-Kincaid readability algo
 ### Questions ###
 Feel free to ping for questions, comments, concerns or interact directly via the GitHub repository.
 
-Randall Shane, PhD<br />
-Randall.Shane@CodeIntelligence.IO<br />
+Randall Shane PhD<br />
+Randall@NumbersAndTech.com<br />
 https://github.com/RandallShanePhD/fkscore<br />
 Thank you!

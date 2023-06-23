@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="fkscore",
-    version="1.1.6",
+    version="1.1.7",
 
     description="Flesch Kincaid readability scoring algorithm",
     long_description=long_description,
@@ -13,8 +13,8 @@ setuptools.setup(
     url="https://github.com/RandallShanePhD/fkscore",
 
     # Author Info
-    author="Randall Shane, PhD <Randall.Shane@CodeIntelligence.IO>",
-    author_email="Randall.Shane@CodeIntelligence.IO",
+    author="Randall Shane PhD <Randall@NumbersAndTech.com>",
+    author_email="Randall@NumbersAndTech.com",
 
 
     # License
@@ -41,9 +41,9 @@ setuptools.setup(
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
-
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
         "Operating System :: OS Independent",
-
     ],
 
     keywords=["nlp", 'linguistics', 'nltk', 'text processing'],

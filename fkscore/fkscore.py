@@ -7,10 +7,13 @@ import string
 class fkscore():
     ''' Flesch Kincaid Readability Score
     test = "The quick red fox jumped over the lazy brown dog."
-    sentences = 1
-    words = 10
-    syllables = 12
-    score =
+    stats:
+     sentences = 1
+     words = 10
+     syllables = 12
+    score
+     readability' = 86.705
+     grade = 6th Grade
     '''
 
     def __init__(self, text):
