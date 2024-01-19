@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="fkscore",
-    version="1.1.7",
+    version="2.0.1",
 
     description="Flesch Kincaid readability scoring algorithm",
     long_description=long_description,
@@ -21,32 +21,55 @@ setuptools.setup(
     license='MIT',
 
     classifiers=[
-        # How mature is this project? Common values are
-        #   3 - Alpha
-        #   4 - Beta
-        #   5 - Production/Stable
+        # Development Status
         'Development Status :: 5 - Production/Stable',
-
-        # Indicate who your project is intended for
-        'Intended Audience :: Developers',
-        'Topic :: Text Processing :: Linguistic',
-        'Topic :: Scientific/Engineering :: Information Analysis',
-        'Topic :: Text Processing :: Indexing',
 
         # Pick your license as you wish (should match "license" above)
         'License :: OSI Approved :: MIT License',
 
-        # Specify the Python versions you support here. In particular, ensure
-        # that you indicate whether you support Python 2, Python 3 or both.
+        # Environments
+        'Environment :: Console',
+        'Environment :: MacOS X',
+        'Environment :: OpenStack',
+        'Environment :: Web Environment',
+
+        # Frameworks
+        'Framework :: IPython',
+        'Framework :: Jupyter',
+
+        # Audience
+        'Intended Audience :: Developers',
+        'Intended Audience :: Science/Research',
+
+        # Language
+        'Natural Language :: English',
+
+        # OS
+        'Operating System :: OS Independent',
+        'Operating System :: MacOS :: MacOS X',
+        'Operating System :: POSIX',
+        'Operating System :: Unix',
+
+        # Python Version
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
-        "Operating System :: OS Independent",
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
+
+        # Topics
+        'Topic :: Scientific/Engineering :: Artificial Intelligence',
+        'Topic :: Scientific/Engineering :: Information Analysis',
+        'Topic :: Text Processing :: Indexing',
+        'Topic :: Text Processing :: Linguistic',
+        'Topic :: Software Development :: Libraries :: Python Modules',
+
     ],
 
-    keywords=["nlp", 'linguistics', 'nltk', 'text processing'],
+    keywords=["nlp", 'linguistics', 'nltk', 'text processing', 'flesch-kincaid readability'],
     packages=setuptools.find_packages(),
     python_requires='>=3.5',
 )
